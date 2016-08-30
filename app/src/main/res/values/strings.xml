@@ -3,4 +3,7 @@
     <string name="texting_toggle">Texting  </string>
     <string name="mom_button">Mom</string>
     <string name="dad_button">Dad</string>
+    <string name="categories">Categories</string>
+    <string name="actions">Actions</string>
+    <string name="emotions">Emotions</string>
 </resources>

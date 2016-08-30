@@ -25,23 +25,26 @@ public class BottomBarActivity extends Fragment {
 
 
         mom_button = (Button) view.findViewById(R.id.mom_button);
+        mom_button.setBackgroundColor(Color.parseColor("#C0D885"));
+
         dad_button = (Button) view.findViewById(R.id.dad_button);
+        dad_button.setBackgroundColor(Color.parseColor("#C0D885"));
 
         if(momDadState.getInt("STATE", 0) != 0){
             if(momDadState.getInt("STATE", 1) == 1){
 
-                mom_button.setBackgroundColor(Color.BLUE);
+                mom_button.setBackgroundColor(Color.parseColor("#2CBE4B"));
                 mom_button.setClickable(false);
 
-                dad_button.setBackgroundColor(Color.LTGRAY);
+                dad_button.setBackgroundColor(Color.parseColor("#F0EEE8"));
                 dad_button.setClickable(true);
 
             }else if(momDadState.getInt("STATE", 2) == 2){
 
-                mom_button.setBackgroundColor(Color.LTGRAY);
+                mom_button.setBackgroundColor(Color.parseColor("#F0EEE8"));
                 mom_button.setClickable(true);
 
-                dad_button.setBackgroundColor(Color.BLUE);
+                dad_button.setBackgroundColor(Color.parseColor("#2CBE4B"));
                 dad_button.setClickable(false);
 
             }
@@ -54,7 +57,7 @@ public class BottomBarActivity extends Fragment {
                 editor.putInt("STATE", 1).apply();
 
                 dad_button.setClickable(true);
-                dad_button.setBackgroundColor(Color.LTGRAY);
+                dad_button.setBackgroundColor(Color.parseColor("#2CBE4B"));
 
                 mom_button.setClickable(false);
                 mom_button.setBackgroundColor(Color.BLUE);
@@ -71,7 +74,7 @@ public class BottomBarActivity extends Fragment {
                 dad_button.setBackgroundColor(Color.BLUE);
 
                 mom_button.setClickable(true);
-                mom_button.setBackgroundColor(Color.LTGRAY);
+                mom_button.setBackgroundColor(Color.parseColor("#2CBE4B"));
             }
         });
 
